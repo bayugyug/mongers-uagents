@@ -1,4 +1,4 @@
-## gohttpdummy
+## mongers-uagents
 
 
 - [x] This is a simple golang script that will do a list of best known user agents of mobile devices
