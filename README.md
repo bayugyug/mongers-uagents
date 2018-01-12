@@ -41,27 +41,53 @@ Usage: ./mongers-uagents [options]
 
 ``` sh
 
-./mongers-uagents -a  "Mozilla/5.0 (Linux; Android 7.1.1; SAMSUNG GT-I9505 Build/NOF27B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/5.2 Chrome/51.0.2704.106 Mobile Safari/537.36"
+./mongers-uagents -a "Mozilla/5.0 (Linux; U; Android 7.1; en-US; Pixel Build/NDE63H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.3.2.960 U3/0.8.0 Mobile Safari/534.30",
 {
         "UserAgent": {
-                "Family": "Samsung Internet",
-                "Major": "5",
-                "Minor": "2",
-                "Patch": ""
+                "Family": "UC Browser",
+                "Major": "11",
+                "Minor": "3",
+                "Patch": "2"
         },
         "Os": {
                 "Family": "Android",
                 "Major": "7",
                 "Minor": "1",
-                "Patch": "1",
+                "Patch": "",
                 "PatchMinor": ""
         },
         "Device": {
-                "Family": "Samsung GT-I9505",
-                "Brand": "Samsung",
-                "Model": "GT-I9505"
+                "Family": "Pixel",
+                "Brand": "Generic_Android",
+                "Model": "Pixel"
         }
 }
+
+
+
+./mongers-uagents -a "Mozilla/5.0 (iPhone; U; CPU iPhone OS 10_0 like Mac OS X; en-us) AppleWebKit/602.1.38 (KHTML, like Gecko) Version/10.0 Mobile/7A341 Safari/602.1",
+{
+        "UserAgent": {
+                "Family": "Mobile Safari",
+                "Major": "10",
+                "Minor": "0",
+                "Patch": ""
+        },
+        "Os": {
+                "Family": "iOS",
+                "Major": "10",
+                "Minor": "0",
+                "Patch": "",
+                "PatchMinor": ""
+        },
+        "Device": {
+                "Family": "iPhone",
+                "Brand": "Apple",
+                "Model": "iPhone"
+        }
+}
+
+
 
 ```
 
