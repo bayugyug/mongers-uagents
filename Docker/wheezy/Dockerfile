@@ -4,16 +4,16 @@ FROM buildpack-deps:wheezy-scm
 #auth
 MAINTAINER bayugyug<bayugyug@gmail.com>
 
-ENV GOLANG_VERSION 1.7.1
+ENV GOLANG_VERSION 1.9.2
 ENV GOLANG_DOWNLOAD_URL https://golang.org/dl/go$GOLANG_VERSION.linux-amd64.tar.gz
-ENV GOLANG_DOWNLOAD_SHA256 43ad621c9b014cde8db17393dc108378d37bc853aa351a6c74bf6432c1bbd182
+ENV GOLANG_DOWNLOAD_SHA256 de874549d9a8d8d8062be05808509c09a88a248e77ec14eb77453530829ac02b
 ENV GOPATH=/go
 ENV GOSRC=$GOPATH/src
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
 # gcc for cgo
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends make git && \
+    apt-get install -y --no-install-recommends make git bzip2 && \
 	rm -rf /var/lib/apt/lists/* && \
     curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz && \
 	echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - && \
