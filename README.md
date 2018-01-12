@@ -1,10 +1,10 @@
 ## mongers-uagents
 
 
-- [x] This is a simple golang script that will do a list of best known user agents of mobile devices
+- [x] This is a simple golang script that will do a list of best known user agents string of mobile devices
 
 
-- [x] Output the details of the user agent
+- [x] Output the details of the user agent string
 
 
 
@@ -13,7 +13,6 @@
 ```sh
 
 $ ./mongers-uagents
-
 
 
 Usage: ./mongers-uagents [options]

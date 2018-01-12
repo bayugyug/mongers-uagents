@@ -58,7 +58,7 @@ type UserAgent struct {
 
 func init() {
 
-	pVersion = "Verion 0.01" + "-" + pBuildTime
+	pVersion = "Ver 0.01" + " - " + pBuildTime
 
 	//uniqueness
 	rand.Seed(time.Now().UnixNano())
