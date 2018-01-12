@@ -29,7 +29,7 @@ docker-scratch: prepare
 	cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents:scratch -f  scratch/Dockerfile .
 
 docker-latest: prepare
-	cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents -f  scratch/Dockerfile .
+	cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents:latest -f  scratch/Dockerfile .
 
 docker-alpine: prepare
 	cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents:alpine  -f  alpine/Dockerfile .
