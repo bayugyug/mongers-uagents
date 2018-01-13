@@ -11,8 +11,7 @@ ENV GOSRC=$GOPATH/src
 ENV PATH=$PATH:$GOPATH/bin
 
 #prepare
-RUN apt-get update  -y && \
-    apt-get install -y --no-install-recommends git && \
+RUN apt-get install -y --no-install-recommends git && \
     rm -rf /var/lib/apt/lists/* && \
     mkdir -p $GOPATH/bin  $GOSRC/github.com/bayugyug && \
     cd $GOSRC/github.com/bayugyug && \
