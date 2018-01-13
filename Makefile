@@ -21,18 +21,11 @@ docker-devel : prepare
 	-@sudo docker rmi -f bayugyug/mongers-uagents 2>/dev/null || true
 	cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents .
 
-docker-wheezy: prepare
-	-@sudo docker rmi -f bayugyug/mongers-uagents 2>/dev/null || true
-	cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents -f  wheezy/Dockerfile .
-
 docker-scratch: prepare
 	cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents:scratch -f  scratch/Dockerfile .
 
 docker-latest: prepare
-	cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents:latest -f  scratch/Dockerfile .
-
-docker-alpine: prepare
-	cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents:alpine  -f  alpine/Dockerfile .
+	cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents:latest -f  Dockerfile .
 
 clean:
 	rm -f mongers-uagents Docker/mongers-uagents

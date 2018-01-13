@@ -4,9 +4,19 @@
 - [x] Simple golang script that will do a list of best known user agents string of mobile devices
 
 
-- [x] Output the details of the user agent string
+- [x] Output the details of the user agent string in JSON format
 
 
+
+## Compile
+
+```sh
+
+     git clone https://github.com/bayugyug/storemeta.git && cd storemeta
+
+     git pull && make
+
+```
 
 ## Usage
 
