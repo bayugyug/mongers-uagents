@@ -12,9 +12,6 @@
 
 ```sh
 
-     git clone https://github.com/bayugyug/storemeta.git && cd storemeta
-
-     git pull && make
 
 ```
 
