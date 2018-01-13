@@ -32,7 +32,7 @@ docker-alpine: prepare
 
 docker-wheezy: prepare
 	-@sudo docker rmi -f bayugyug/mongers-uagents 2>/dev/null || true
-	cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents -f  wheezy/Dockerfile .
+	cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents:wheezy -f  wheezy/Dockerfile .
 
 clean:
 	rm -f mongers-uagents Docker/mongers-uagents
