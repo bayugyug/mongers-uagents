@@ -30,6 +30,10 @@ docker-latest: prepare
 docker-alpine: prepare
 	cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents:alpine -f  alpine/Dockerfile .
 
+docker-wheezy: prepare
+        -@sudo docker rmi -f bayugyug/mongers-uagents 2>/dev/null || true
+        cd Docker && sudo docker build --no-cache --rm -t bayugyug/mongers-uagents -f  wheezy/Dockerfile .
+
 clean:
 	rm -f mongers-uagents Docker/mongers-uagents
 	rm -f benchmarks.xml coverage.xml vet.txt lint.txt testrun.txt
